@@ -33,19 +33,7 @@ elif option == "Decrypt":
             try:
                 f = Fernet(key.encode())
                 decrypted_text = f.decrypt(encrypted_text.encode()).decode()
-                messagebox.showinfo("Decrypted Text", f"Decrypted Text: {decrypted_text}")
-            except:
-                messagebox.showinfo("Error", "Decryption failed! Invalid encrypted text or encryption key.")
-        else:
-            messagebox.showinfo("Error", "Please enter the encrypted text and encryption key.")
-
-    def copy_to_clipboard(self, text):
-        self.window.clipboard_clear()
-        self.window.clipboard_append(text)
-
-    def run(self):
-        self.window.mainloop()
-
-
-tool = EncryptionTool()
-tool.run()
+                st.success("✅ Decrypted successfully!")
+                st.code(decrypted_text, language="text")
+            except Exception as e:
+                st.error("❌ Decryption failed. Please check your key and encrypted text.")
