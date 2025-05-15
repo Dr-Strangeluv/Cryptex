@@ -8,4 +8,4 @@ Simple, interactive web app for securely encrypting and decrypting text using th
 - Web interface using Streamlit – no installation needed for users
 - Key and ciphertext are copyable and reusable
 
-https://cryptex-99.streamlit.app/
+🌐 Try the live app:https://cryptex-99.streamlit.app/
