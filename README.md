@@ -9,3 +9,13 @@ Simple, interactive web app for securely encrypting and decrypting text using th
 - Key and ciphertext are copyable and reusable
 
 🌐 Try the live app:https://cryptex-99.streamlit.app/
+
+
+
+## 🧑‍💻 Running Locally
+
+```bash
+git clone https://github.com/yourusername/encryption-tool.git
+cd encryption-tool
+pip install -r requirements.txt
+streamlit run app.py
